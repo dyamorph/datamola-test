@@ -1,0 +1,141 @@
+:root {
+  --primary-font: 'Montserrat', sans-serif;
+  --link-color: rgb(83, 176, 174);
+  --link-hover-color: rgb(62, 131, 130);
+  --primary-color: rgb(67, 72, 189);
+  --title-font-size: 2rem;
+  --base-font-size: 1rem;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+html,
+body {
+  overflow-x: hidden;
+  font-family: var(--primary-font);
+  font-size: 16px;
+  height: 100%;
+}
+ul,
+p {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.wrapper {
+  font-size: var(--base-font-size);
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(123, 196, 196, 0.5032213569021359) 100%
+  );
+}
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.heading {
+  margin-bottom: 2rem;
+}
+
+.about-me {
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 5rem;
+}
+.about-me_info {
+  display: flex;
+  flex-direction: column;
+}
+.about-me_profile-photo {
+  max-width: 140px;
+  border-radius: 50%;
+}
+.main {
+  padding: 1rem;
+  flex: 1 1 auto;
+}
+.main_body {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main_block {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  flex-shrink: 1;
+}
+
+.contacts_item {
+  margin-bottom: 1rem;
+  transition: all 0.4s ease;
+}
+
+.link {
+  color: var(--link-color);
+  transition: 0.3s all ease;
+}
+.link:hover {
+  color: var(--link-hover-color);
+}
+
+.education_item,
+.courses_item {
+  margin-bottom: 2rem;
+}
+.education_item p,
+.courses_item p {
+  margin-bottom: 0.5rem;
+}
+
+.facts_item {
+  margin-bottom: 1rem;
+}
+.facts_item:last-child {
+  margin-bottom: 0;
+}
+.footer-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    padding: 0;
+  }
+  .main_body {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .main_block {
+    flex-basis: 50%;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-me {
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 0;
+  }
+  .main_body {
+    padding: 1rem;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .main_block {
+    flex-basis: 100%;
+    align-items: flex-start;
+  }
+}

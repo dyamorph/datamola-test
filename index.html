@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles/normalize.css"/>
+  <link rel="stylesheet" href="styles/style.css"/>
+  <link rel="stylesheet" href="styles/slider.css"/>
+  <link rel="stylesheet" href="styles/burger.css">
+  <title>My Resume</title>
+</head>
+<body>
+<div class="wrapper">
+  <header class="header">
+    <div class="container">
+      <section class="about-me">
+        <img
+            class="about-me_profile-photo"
+            src="assets/images/profile-photo.jpg"
+            alt="Profile Photo"
+        />
+        <div class="about-me_info">
+          <h1 class="about-me_full-name">Dmitry Skrinnikov, 26 years</h1>
+          <h3 class="about-me_job">Frontend Developer</h3>
+        </div>
+      </section>
+    </div>
+    <nav class="menu">
+      <ul class="menu_list">
+        <li class="menu_item"><a class="menu_link link" href="#">About</a></li>
+        <li class="menu_item"><a class="menu_link link" href="#">Home</a></li>
+        <li class="menu_item"><a class="menu_link link" href="#">Contacts</a></li>
+        <li class="menu_item"><a class="menu_link link" href="#">Feedback</a></li>
+      </ul>
+      <div class="menu_burger-icon">
+        <span class="burger-icon_line"></span>
+        <span class="burger-icon_line"></span>
+        <span class="burger-icon_line"></span>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+    <div class="container">
+      <div class="main_body">
+        <section class="main_block contacts">
+          <h2 class="contacts_heading heading">Contacts</h2>
+          <ul class="contacts_list">
+            <li class="contacts_item">
+              <span>Tel: </span><a class="link" href="tel:+375447144446">+375447144446</a>
+            </li>
+            <li class="contacts_item">
+              <span>Telegram: </span>
+              <a class="link" target="_blank" href="https://t.me/dyamorphxx">@dyamorphxx</a>
+            </li>
+            <li class="contacts_item">
+              <span>Linkedin: </span>
+              <a
+                  class="link"
+                  href="https://www.linkedin.com/in/dmitry-skrinnikov-743612137/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+              >Dmitry Skrinnikov</a
+              >
+            </li>
+            <li class="contacts_item">
+                  <span
+                  >Email:
+                    <a class="link" href="mailto:dyamorph22@gmail.com"
+                    >dyamorph22@gmail.com</a
+                    ></span
+                  >
+            </li>
+            <li class="contacts_item">
+              <span>GitHub: <a class="link" href="https://github.com/dyamorph">GitHub</a></span>
+            </li>
+          </ul>
+        </section>
+        <section class="main_block education">
+          <h2 class="education_heading heading">Education</h2>
+          <ul class="education_list">
+            <li class="education_item">
+              <p>2013-2018,</p>
+              <p>Belarusian National Technical University,</p>
+              <p>Bachelor's degree</p>
+            </li>
+            <li class="education_item">
+              <p>2020-2022,</p>
+              <p>Graduate School of the National Academy of Sciences of Belarus,</p>
+              <p>Master's degree</p>
+            </li>
+          </ul>
+        </section>
+        <section class="main_block courses">
+          <h2 class="courses_heading heading">Courses</h2>
+          <ul class="courses_list">
+            <li class="courses_item">
+              <p>The Rolling Scopes</p>
+              <p>JavaScript/Frontend Preschool</p>
+              <p>
+                <a class="link" href="https://app.rs.school/certificate/eu9oqx1b"
+                >Certificate</a
+                >
+              </p>
+            </li>
+            <li class="courses_item">
+              <p>Epic React by Kent C. Dodds</p>
+              <p><a class="link" href="https://epicreact.dev/">Epic React</a></p>
+            </li>
+          </ul>
+        </section>
+        <section class="main_block facts">
+          <h2 class="facts_heading heading">A few facts</h2>
+          <ul class="facts_list">
+            <li class="facts_item">
+              <span>Love cats &#128568;.</span>
+            </li>
+            <li class="facts_item">
+              <span>Worked as a research scientist for 4 years.</span>
+            </li>
+            <li class="facts_item">
+              <span>Favorite time of the year is winter.</span>
+            </li>
+            <li class="facts_item">
+              <span>Have a passion for new knowledge.</span>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </main>
+  <section class="slider">
+    <ul class="slider_body">
+      <li class="slide">
+        <img src="assets/images/cat-1.jpg" alt="Cat" class="slide_img"/>
+      </li>
+      <li class="slide">
+        <img src="assets/images/cat-2.jpg" alt="Cat" class="slide_img"/>
+      </li>
+      <li class="slide">
+        <img src="assets/images/cat-3.jpg" alt="Cat" class="slide_img"/>
+      </li>
+      <li class="slide">
+        <img src="assets/images/cat-4.jpg" alt="Cat" class="slide_img"/>
+      </li>
+      <li class="slide">
+        <img src="assets/images/cat-5.jpg" alt="Cat" class="slide_img"/>
+      </li>
+    </ul>
+    <div class="slider_navs">
+      <div class="arrow_container">
+        <span class="arrow arrow_prev"></span>
+        <span class="arrow arrow_next"></span>
+      </div>
+      <ul class="dot_container">
+        <li class="dot is-active" id="dot-1"></li>
+        <li class="dot" id="dot-2"></li>
+        <li class="dot" id="dot-3"></li>
+        <li class="dot" id="dot-4"></li>
+        <li class="dot" id="dot-5"></li>
+      </ul>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <section class="footer-body">
+        <span>2023</span>
+      </section>
+    </div>
+  </footer>
+</div>
+<script src="scripts/slider.js"></script>
+<script src="scripts/burger.js"></script>
+</body>
+</html>
